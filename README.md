@@ -46,7 +46,7 @@ The data includes 1,599 observations and the following variables:<br />
 **quality:** How the wine is rated. In this dataset the lowest quality is 3 while the highest is 8.
 ![Dataview](./img/dataview.png)
 ## Methodology
-1. *Data Understanding and Data Cleaning:* Lengths and types of the variables were determined and data was checked for missing values. The dataset consists of all numeric variables. The dataset doesn't contain missing values.<br />
+1. *Data Understanding and Data Cleaning:* Lengths and types of the variables were determined and data was checked for missing values. The dataset consists of all numeric variables. The dataset doesn't contain missing values.
 <br>
 2. *Exploratory Analysis:* Created visualizations to explore the target variable and examine the potential existance of outliers or corrupt data. Further visualized the relationship between the target and the feature variables and relationships between features.<br />
 <br>
