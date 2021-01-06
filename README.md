@@ -1,5 +1,5 @@
 # Wine Quality Prediction
-Salary Prediction Project
+Wine Quality Prediction Project
 ## Table of contents
 * [Introduction](#introduction)
 * [Technologies](#technologies)
@@ -16,12 +16,11 @@ Python
 The goal for this analysis is to be able to predict the quality of wine based on certain attributes.
 ## Dataset
 The dataset can be found here:
+<br>
 https://archive.ics.uci.edu/ml/datasets/wine+quality
-The data includes 1,599 observations and the following variables:
-
 <br>
 The data includes 1,599 observations and the following variables:
-
+<br>
 **fixed acidity:** The predominant fixed acids found in wines are tartaric, malic, citric, and succinic. Wines produced from cool climate grapes are high in acidity and thus taste sour. These high-acid wines can be treated to reduce the acidity.
 <br>
 **volatile acidity:** Acetic acid, which is also the primary acid associated with the smell and taste of vinegar.
