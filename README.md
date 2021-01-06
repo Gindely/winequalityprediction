@@ -19,7 +19,7 @@ The dataset can be found here:
 <br>
 https://archive.ics.uci.edu/ml/datasets/wine+quality<br />
 <br>
-The data includes 1,599 observations and the following variables:
+The data includes 1,599 observations and the following variables:<br />
 <br>
 **fixed acidity:** The predominant fixed acids found in wines are tartaric, malic, citric, and succinic. Wines produced from cool climate grapes are high in acidity and thus taste sour. These high-acid wines can be treated to reduce the acidity.
 <br>
@@ -46,11 +46,28 @@ The data includes 1,599 observations and the following variables:
 **quality:** How the wine is rated. In this dataset the lowest quality is 3 while the highest is 8.
 ![Dataview](./img/dataview.png)
 ## Methodology
-1. *Data Understanding and Data Cleaning:* Lengths and types of the variables were determined and data was checked for missing values and duplicates. Since the dataset contains 1 million records and only five missing values were found, removal was deemed appropriate. <br />
-![Datacleaning](./img/datacleaning.png)
-2. *Exploratory Analysis:* Created visualizations to explore the target variable and examine the potential existance of outliers or corrupt data. Further visualized the relationship between the target and the feature variables and relationships between features.
-![Targetviz](./img/targetviz.png) ![Heatmap](./img/heatmap.png) <br />
-The average salary is approximately $110,000 and salary is normally distributed. The heatmap shows that degree and major are highly correlated.
+1. *Data Understanding and Data Cleaning:* Lengths and types of the variables were determined and data was checked for missing values. The dataset consists of all numeric variables. The dataset doesn't contain missing values.<br />
+<br>
+2. *Exploratory Analysis:* Created visualizations to explore the target variable and examine the potential existance of outliers or corrupt data. Further visualized the relationship between the target and the feature variables and relationships between features.<br />
+<br>
+First, I examined the target variable, quality. The average of wines in this dataset are rated 5 or 6 and target variable is normally distributed.
+![Targetviz](./img/targetplot.png) <br />
+<br>
+Second, a distribution plot and a box plot was created to examine the distribution of each feature and the interaction between feature and target respectively. 
+[Featplot](./img/featplot.png) <br />
+Lastly, a heatmap was created to further examine the degree of correlation between varibles.
+<br>[Heatmap](./img/heatmap.png) <br />
+The highest positively correlated variables are:
+* citric acid and fixed acidity
+* density and fixed acidity
+* alcohol and quality
+The highest negatively correlated variables are:
+* citric acid and volatile acidity
+* pH and fixed acidity
+* pH and citric acidity
+* denisty and alcohol
+<br />
+
 3. *Feature Selection and Feature Engineering:* Removed features that could potentially create noise and accessed the validity of removal through backward elimination and feature importance. Used ordinal encoding on degree and job type and one-hot encoding on major and industry in order to be used in the model and applied standardization to ensure that one feature doesn't influence the model more than the others.
 ![Modelselection](./img/modelselection.png)
 4. *Model Building and Evaluation:* Established a Baseline Model, using Linear Regreesion, and evaluated based on MSE and R-squared. Developed 3 other models in order to improve upon baseline model. <br />
