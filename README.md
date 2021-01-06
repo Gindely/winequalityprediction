@@ -62,13 +62,13 @@ Lastly, a heatmap was created to further examine the degree of correlation betwe
 The highest positively correlated variables are:
 * citric acid and fixed acidity
 * density and fixed acidity
-* alcohol and quality
+* alcohol and quality <br />
+
 The highest negatively correlated variables are:
 * citric acid and volatile acidity
 * pH and fixed acidity
 * pH and citric acidity
-* denisty and alcohol
-<br />
+* denisty and alcohol <br />
 
 3. *Feature Selection and Feature Engineering:* Removed features that could potentially create noise and accessed the validity of removal through backward elimination and feature importance. Used ordinal encoding on degree and job type and one-hot encoding on major and industry in order to be used in the model and applied standardization to ensure that one feature doesn't influence the model more than the others.
 ![Modelselection](./img/modelselection.png)
