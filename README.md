@@ -17,8 +17,8 @@ The goal for this analysis is to be able to predict the quality of wine based on
 ## Dataset
 The dataset can be found here:
 <br>
-https://archive.ics.uci.edu/ml/datasets/wine+quality
-<br />
+https://archive.ics.uci.edu/ml/datasets/wine+quality<br />
+<br>
 The data includes 1,599 observations and the following variables:
 <br>
 **fixed acidity:** The predominant fixed acids found in wines are tartaric, malic, citric, and succinic. Wines produced from cool climate grapes are high in acidity and thus taste sour. These high-acid wines can be treated to reduce the acidity.
