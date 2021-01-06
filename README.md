@@ -54,9 +54,11 @@ First, I examined the target variable, quality. The average of wines in this dat
 ![Targetviz](./img/targetplot.png) <br />
 
 Second, a distribution plot and a box plot was created to examine the distribution of each feature and the interaction between feature and target respectively. 
-[Featplot](./img/featplot.png) <br />
+![Featplot](./img/featplot.png) <br />
+
 Lastly, a heatmap was created to further examine the degree of correlation between varibles.
-<br>[Heatmap](./img/heatmap.png) <br />
+![Heatmap](./img/heatmap.png) <br />
+
 The highest positively correlated variables are:
 * citric acid and fixed acidity
 * density and fixed acidity
