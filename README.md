@@ -47,12 +47,12 @@ The data includes 1,599 observations and the following variables:<br />
 ![Dataview](./img/dataview.png)
 ## Methodology
 1. *Data Understanding and Data Cleaning:* Lengths and types of the variables were determined and data was checked for missing values. The dataset consists of all numeric variables. The dataset doesn't contain missing values.
-<br>
+
 2. *Exploratory Analysis:* Created visualizations to explore the target variable and examine the potential existance of outliers or corrupt data. Further visualized the relationship between the target and the feature variables and relationships between features.<br />
-<br>
+
 First, I examined the target variable, quality. The average of wines in this dataset are rated 5 or 6 and target variable is normally distributed.
 ![Targetviz](./img/targetplot.png) <br />
-<br>
+
 Second, a distribution plot and a box plot was created to examine the distribution of each feature and the interaction between feature and target respectively. 
 [Featplot](./img/featplot.png) <br />
 Lastly, a heatmap was created to further examine the degree of correlation between varibles.
