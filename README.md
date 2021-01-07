@@ -9,7 +9,7 @@ Wine Quality Prediction Project
 * [Models Used](#models-used)
 * [Model Results and Selection](#model-results-and-selection)
 ## Introduction
-I was first introduced to wine during a wine tasting trip I took to Italy in 2010. We visited many cities such as; Milan, Florence, Tuscany, Venice, etc. in which we visited vineyards, drank wine, ate good food, and were taught about the wine making process. Through my experience in Italy, I became a fan of wine specifically red wine. I wanted to take a deeper dive into what the components are for a high quality wine. 
+I was first introduced to wine during a wine tasting trip I took to Italy in 2010. We visited many cities such as; Milan, Florence, Tuscany, Venice, etc. in which we visited vineyards, drank wine, ate delicious food, and were taught about the wine making process. Through my experience in Italy, I became a fan of wine specifically red wine. I wanted to take a deeper dive into what the components are for a high quality wine. 
 ## Technologies
 Python
 ## Goal
@@ -70,8 +70,9 @@ The highest negatively correlated variables are:
 * pH and citric acidity
 * denisty and alcohol <br />
 
-3. *Feature Selection and Feature Engineering:* Removed features that could potentially create noise and accessed the validity of removal through backward elimination and feature importance. Used ordinal encoding on degree and job type and one-hot encoding on major and industry in order to be used in the model and applied standardization to ensure that one feature doesn't influence the model more than the others.
-![Modelselection](./img/modelselection.png)
+3. *Feature Selection and Feature Engineering:* In order to access which features to use for the linear regression model, I reviewed the p-values for each feature in order to determine with features showed staistical significance. I applied backward elimination in order to select the best features for the model. The variance inflation factor shows that mulicollinearity does not exist in the model selected. For the random forest model, I applied binning to quality. Wines of quality 3-4 were considered as low, 5-6 were considered medium, and 7-8 were considered high quality.
+![Selfeatures](./img/selfeatures.png) ![Vif](./img/vif.png) <br />
+
 4. *Model Building and Evaluation:* Established a Baseline Model, using Linear Regreesion, and evaluated based on MSE and R-squared. Developed 3 other models in order to improve upon baseline model. <br />
 ![Baselinescatter](./img/baselinescatter.png) ![Distributionbaseline](./img/distributionbaseline.png)
 5. *Scoring the Dataset:* Model with lowest MSE and highest R-squared was selected for salary prediction.The baseline model results were and R-sqaured of 74% and a MSE of 395.
