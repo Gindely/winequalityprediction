@@ -5,8 +5,8 @@ Wine Quality Prediction Project
 * [Technologies](#technologies)
 * [Goal](#goal)
 * [Dataset](#dataset)
-* [Methodology](#methodology)
 * [Models Used](#models-used)
+* [Methodology](#methodology)
 * [Model Results and Selection](#model-results-and-selection)
 ## Introduction
 I was first introduced to wine during a wine tasting trip I took to Italy in 2010. We visited many cities such as; Milan, Florence, Tuscany, Venice, etc. in which we visited vineyards, drank wine, ate delicious food, and were taught about the wine making process. Through my experience in Italy, I became a fan of wine specifically red wine. I wanted to take a deeper dive into what the components are for a high quality wine. 
@@ -45,6 +45,14 @@ The data includes 1,599 observations and the following variables:<br />
 <br>
 **quality:** How the wine is rated. In this dataset the lowest quality is 3 while the highest is 8.
 ![Dataview](./img/dataview.png)
+
+## Models Used
+Linear Regression: Baseline Model
+<br>
+KNN
+<br>
+Random Forest
+
 ## Methodology
 1. *Data Understanding and Data Cleaning:* Lengths and types of the variables were determined and data was checked for missing values. The dataset consists of all numeric variables. The dataset doesn't contain missing values.
 
@@ -73,17 +81,10 @@ The highest negatively correlated variables are:
 3. *Feature Selection and Feature Engineering:* In order to access which features to use for the linear regression model, I reviewed the p-values for each feature in order to determine with features showed staistical significance. I applied backward elimination in order to select the best features for the model. The variance inflation factor shows that mulicollinearity does not exist in the model selected. For the random forest model, I applied binning to quality. Wines of quality 3-4 were considered as low, 5-6 were considered medium, and 7-8 were considered high quality. <br>
 ![Selfeatures](./img/selfeatures.png) ![Vif](./img/vif.png) <br />
 
-4. *Model Building and Evaluation:* Established a Baseline Model, using Linear Regreesion, and evaluated based on MSE and R-squared. Developed 3 other models in order to improve upon baseline model. <br />
+4. *Model Building and Evaluation:* Established a Baseline Model, using Linear Regreesion, and evaluated based on MSE and R-squared. Developed 2 other models in order to improve upon baseline model. <br />
 ![Baselinescatter](./img/baselinescatter.png) ![Distributionbaseline](./img/distributionbaseline.png)
 5. *Scoring the Dataset:* Model with lowest MSE and highest R-squared was selected for salary prediction.The baseline model results were and R-sqaured of 74% and a MSE of 395.
-## Models Used
-Linear Regression: Baseline
-<br>
-Polynomial Transformation: When I plotted the model previously, the data showed some curvature. If we applyed polynomial transformation to the features, a quadratic curve will potentionally fit the data better than a linear one.
-<br>
-Ridge Regression: Since the data potentially displays multicollinearity or highly corrleated features, specifically between major and degree, I decided to try this model.
-<br>
-Random Forest: Since the data consists of largely categorical features, I choose this model to see if it would perform better.
+
 ## Model Results and Selection
 **Linear regression with 2nd order polynomial transformation gave the best prediction of salary with MSE of 357 and R-squared of 76%.**
 *Ridge Regression also showed MSE of 357, but a R-squared of slightly lower at 73%.
