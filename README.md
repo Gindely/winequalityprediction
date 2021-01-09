@@ -81,7 +81,8 @@ The highest negatively correlated variables are:
 3. *Feature Selection and Feature Engineering:* In order to access which features to use for the linear regression model, I reviewed the p-values for each feature in order to determine with features showed staistical significance. I applied backward elimination in order to select the best features for the model. The variance inflation factor shows that mulicollinearity does not exist in the model selected. For the random forest model, I applied binning to quality. Wines of quality 3-4 were considered as low, 5-6 were considered medium, and 7-8 were considered high quality. <br>
 ![Selfeatures](./img/selfeatures.png) ![Vif](./img/vif.png) <br />
 
-4. *Model Building and Evaluation:* Established a Baseline Model, using Linear Regreesion, and evaluated based on MSE and R-squared. Developed 2 other models in order to improve upon baseline model. <br />
+4. *Model Building and Evaluation:* Established a baseline model and developed two additional models to see if I could improve upon the baseline. Evaluated the performance of each model based on MSE and R-squared/Accuracy.  <br />
+### Baseline Model: Linear Regression
 ![Baselinescatter](./img/baselinescatter.png) ![Distributionbaseline](./img/distributionbaseline.png)
 5. *Scoring the Dataset:* Model with lowest MSE and highest R-squared was selected for salary prediction.The baseline model results were and R-sqaured of 74% and a MSE of 395.
 
