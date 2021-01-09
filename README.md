@@ -85,25 +85,22 @@ The highest negatively correlated variables are:
 
 ### Baseline Model: Linear Regression
 ![Regressionplot](./img/regressionplot.png) <br />
-MSE: .39 <br>
-R-squared: 38% <br />
+  *MSE:* .39 <br>
+  *R-squared:* 38% <br />
 ### KNN
 ![Knn](./img/knn.png) <br />
-MSE: .44 <br>
-Accuracy: 67% <br />
+  *MSE:* .44 <br>
+  *Accuracy:* 67% <br />
 ### Random Forest
 ![Randomforest](./img/randomforest.png) ![Distplotrf](./img/distplotrf.png) <br />
-MSE: .18 <br>
-Accuracy: 82% <br />
+  *MSE:* .18 <br>
+  *Accuracy:* 82% <br />
 
 5. *Scoring the Dataset:* Evaluated the performance of each model based on MSE and R-squared/Accuracy. The model with lowest MSE and highest R-squared or Accuracy was selected for quality prediction.
 
 ## Model Results and Selection
-**Linear regression with 2nd order polynomial transformation gave the best prediction of salary with MSE of 357 and R-squared of 76%.**
-*Ridge Regression also showed MSE of 357, but a R-squared of slightly lower at 73%.
-Random Forest resulted in the worse MSE of 372 and R-squared of 75%.*<br />
-![Ploynomialdistplot](./img/polydistplot.png)<br />
+**Random Forest gave the best prediction of quality with MSE of .18 and Accuracy of 82%.**
 The distribution plot for the choosen model shows that the predicted values are very close to the actual values with a bit of an overestimation in salaries from $105,000 to $150,000.<br />
 <br>
-The plot below demostrates the level of importance of each feature on salary. The feature with the highest influence on Salary is job type.
-![featureimp](./img/featureimp.png)<br />
+The plot below demostrates the level of importance of each feature on the quality of wine. The feature with the highest influence on quality is alcohol.
+![featimp](./img/featimp.png)<br />
