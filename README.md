@@ -100,7 +100,7 @@ The highest negatively correlated variables are:
 
 ## Model Results and Selection
 **Random Forest gave the best prediction of quality with MSE of .18 and Accuracy of 82%.**
-The distribution plot for the choosen model shows that the predicted values are very close to the actual values with a bit of an overestimation in salaries from $105,000 to $150,000.<br />
+The distribution plot for the choosen model shows that the predicted values are very close to the actual values with a bit of an overestimation in the prediction of wines of "medium" quality and a slight underestimation in "low" and "high" quality wines. <br />
 <br>
-The plot below demostrates the level of importance of each feature on the quality of wine. The feature with the highest influence on quality is alcohol.
+The plot below demostrates the level of importance of each feature on the quality of wine. The feature with the highest influence on quality is alcohol. <br>
 ![featimp](./img/featimp.png)<br />
