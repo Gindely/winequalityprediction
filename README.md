@@ -81,10 +81,22 @@ The highest negatively correlated variables are:
 3. *Feature Selection and Feature Engineering:* In order to access which features to use for the linear regression model, I reviewed the p-values for each feature in order to determine with features showed staistical significance. I applied backward elimination in order to select the best features for the model. The variance inflation factor shows that mulicollinearity does not exist in the model selected. For the random forest model, I applied binning to quality. Wines of quality 3-4 were considered as low, 5-6 were considered medium, and 7-8 were considered high quality. <br>
 ![Selfeatures](./img/selfeatures.png) ![Vif](./img/vif.png) <br />
 
-4. *Model Building and Evaluation:* Established a baseline model and developed two additional models to see if I could improve upon the baseline. Evaluated the performance of each model based on MSE and R-squared/Accuracy.  <br />
+4. *Model Building and Evaluation:* Established a baseline model and developed two additional models to see if I could improve upon the baseline. For each model a train-test split of 70%-30% was used. Each models were then fitted. <br />
+
 ### Baseline Model: Linear Regression
-![Baselinescatter](./img/baselinescatter.png) ![Distributionbaseline](./img/distributionbaseline.png)
-5. *Scoring the Dataset:* Model with lowest MSE and highest R-squared was selected for salary prediction.The baseline model results were and R-sqaured of 74% and a MSE of 395.
+![Regressionplot](./img/regressionplot.png) <br />
+MSE: .39 <br>
+R-squared: 38% <br />
+### KNN
+![Knn](./img/knn.png) <br />
+MSE: .44 <br>
+Accuracy: 67% <br />
+### Random Forest
+![Randomforest](./img/randomforest.png) ![Distplotrf](./img/distplotrf.png) <br />
+MSE: .18 <br>
+Accuracy: 82% <br />
+
+5. *Scoring the Dataset:* Evaluated the performance of each model based on MSE and R-squared/Accuracy. The model with lowest MSE and highest R-squared or Accuracy was selected for quality prediction.
 
 ## Model Results and Selection
 **Linear regression with 2nd order polynomial transformation gave the best prediction of salary with MSE of 357 and R-squared of 76%.**
